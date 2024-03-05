@@ -18,11 +18,11 @@ void circulantMat(double **c, int m);
 double **Matsec(double **a, double ** b, int m, double k);//section formula
 double **matrix_merge(double **m1,double **m2,double **m3,int m, int n);
 double **matrix(double c1,double c2,double c3);
-double freeMat(double **matrix, int rows);
-//String printMatToString(double** matrix, int rows, int cols);
+void freeMat(double **matrix, int rows);
+String printMatToString(double** matrix, int rows, int cols);
 
 //section formula
-/*String printMatToString(double** matrix, int rows, int cols) {
+String printMatToString(double** matrix, int rows, int cols) {
     String result;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -32,9 +32,9 @@ double freeMat(double **matrix, int rows);
     }
     return result;
 }
-*/
 
-double freeMat(double **matrix, int rows) {
+
+void freeMat(double **matrix, int rows) {
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
     }
