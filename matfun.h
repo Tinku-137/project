@@ -19,9 +19,10 @@ double **Matsec(double **a, double ** b, int m, double k);//section formula
 double **matrix_merge(double **m1,double **m2,double **m3,int m, int n);
 double **matrix(double c1,double c2,double c3);
 void freeMat(double **matrix, int rows);
-String printMatToString(double** matrix, int rows, int cols);
+//String printMatToString(double** matrix, int rows, int cols);
 
 //section formula
+/*
 String printMatToString(double** matrix, int rows, int cols) {
     String result;
     for (int i = 0; i < rows; i++) {
@@ -32,7 +33,7 @@ String printMatToString(double** matrix, int rows, int cols) {
     }
     return result;
 }
-
+*/
 
 void freeMat(double **matrix, int rows) {
     for (int i = 0; i < rows; i++) {
